@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ===============================
-       EFEITO DE CLIQUE (PULSE)
-    =============================== */
     const clickableElements = document.querySelectorAll('.cta-button, .nav a, .submit-button');
 
     clickableElements.forEach(el => {
@@ -17,9 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ===============================
-       ANIMAÇÃO FADE-IN (OBSERVER)
-    =============================== */
     const elements = document.querySelectorAll('.fade-in');
 
     const observer = new IntersectionObserver(
@@ -37,17 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elements.forEach(el => observer.observe(el));
 
-    /* ===============================
-       VALIDAÇÃO DO FORMULÁRIO DE CONTATO
-    =============================== */
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
 
     if (contactForm && submitBtn) {
-        // Monitora qualquer digitação no formulário
+        
         contactForm.addEventListener('input', () => {
-            // checkValidity verifica se todos os campos 'required' estão ok
-            // e se o email tem o formato correto (@ e ponto)
+       
             if (contactForm.checkValidity()) {
                 submitBtn.disabled = false;
                 submitBtn.style.opacity = "1";

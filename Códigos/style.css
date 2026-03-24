@@ -1,4 +1,4 @@
-/* ================= RESET & BASE ================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ================= HEADER ================= */
 .header {
     display: flex;
     align-items: center;
@@ -51,7 +50,6 @@ body {
 
 .nav a:hover { color: #3cb3a1; }
 
-/* ================= HERO ================= */
 .hero-section {
     display: flex;
     flex-direction: row-reverse;
@@ -105,7 +103,6 @@ body {
     max-width: 100%;
 }
 
-/* ================= SOBRE ================= */
 .about-section {
     max-width: 1280px;
     margin: 0 auto;
@@ -155,7 +152,6 @@ body {
 
 .stat-card.highlight { background: #3cb3a1; color: #fff; }
 
-/* ================= SERVIÇOS ================= */
 .services-section {
     max-width: 1280px;
     margin: 0 auto;
@@ -205,7 +201,6 @@ body {
 .service-icon img { max-height: 100%; width: auto; }
 .service-card.highlight .service-icon img { filter: brightness(0) invert(1); }
 
-/* ================= CONTATO ================= */
 .contact-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -312,7 +307,6 @@ textarea {
     pointer-events: none;
 }
 
-/* ================= RODAPÉ ================= */
 .main-footer {
     background-color: #ffffff;
     padding: 80px 40px 40px;
@@ -411,7 +405,6 @@ textarea {
     font-size: 13px;
 }
 
-/* ================= ANIMAÇÕES ================= */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(0.95); }
